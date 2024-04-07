@@ -1,0 +1,31 @@
+# Top Level Files:
+#     blog.py: Imports Flask application instance from **init**.py
+#     config.py: Used to store settings and sensitive information for Flask
+#     app.db: This is the SQLite Database hosting user's information
+#     .flaskenv: Similiar to a key, used to autherize Virtual Environment Changes or Server
+#     .venv: Virtual Environment (Shows Libraries Installed)
+
+# Migration Folder:
+#     migrations: Host the database versions (Able to down or upgrade it)
+#     Use (flask db migrate -m "Comment") to generate new tables
+#     To migrate it, use (flask db upgrade)
+
+# App Folder:
+#     Templates Folder:
+#     base.html: The standard website style
+#     index.html: How the standard homepage will look like
+#     login.html: How the standard login page will look like
+
+# Files:
+#     **init**.py: Where all main libraries are hosted    
+#     forms.py: The design of the user login form
+#     models.py: The structure model of the database
+#     routes.py: Redirection of HTMLs / URLs
+
+
+
+
+# Use 'flask run' to start a local website server
+#If flask run isn't running, make sure the entire projects folder name is microblog as the migrations folder is linked to that name
+# Correcting Errors:
+# When using python3 and User isn't imported use: from app.models import User
