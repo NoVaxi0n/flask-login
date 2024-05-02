@@ -1,14 +1,29 @@
-Flask-Login User Authentications
-This repository explores how different Flask Libraries are used to host a local website environment that provides user session management. It handles common tasks such as logging in, logging out, and remembering user sessions over extended periods of time. Whether you’re building a simple blog or a complex web application, Flask-Login simplifies user authentication.
+# Flask Microblog Application
 
-Features
-User Authentication: Easily integrated login functionality into the Flask app.
-Session Management: Manage user sessions securely.
-Database Agnostic: Not bound to any specific database system.
-Permissions Model: Flexible permissions handling.
+## Project Overview
+This Flask application is a simple microblogging platform where users can create accounts, log in, and post messages. It utilizes Flask, SQLAlchemy, Flask-Migrate, and Flask-Login to handle user authentication and database interactions efficiently.
 
-Usage
-Login Page: Create a login page where users can enter their credentials.
-User Model: Define any user model (e.g., SQLAlchemy User class).
-Session Handling: Uses Flask-Login to manage user sessions.
-Protect Routes: Uses the @login_required decorator to protect routes.
+## Features
+- **User Authentication:** Login, logout, and registration functionalities.
+- **Posting:** Users can write and view posts once logged in.
+- **Database Integration:** Using SQLAlchemy for ORM and Flask-Migrate for migration tasks.
+
+## Installation
+
+### Prerequisites
+- Python 3.6+
+- Flask
+- A virtual environment (recommended)
+
+### Setup and Installation
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/microblog.git
+cd microblog
+
+# Optional: Set up a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install required packages
+pip install -r requirements.txt
